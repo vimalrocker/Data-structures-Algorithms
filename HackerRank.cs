@@ -7,7 +7,7 @@ namespace DataStructuresAlgorithms
 {
     public class HackerRank
     {
-        //
+        //Check an array to see if there is pair that when added returns a given Sum
         public bool PairSums()
         {
             int n = 5;
