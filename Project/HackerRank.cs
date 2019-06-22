@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -30,7 +29,7 @@ namespace DataStructuresAlgorithms
 
         }
 
-        //Check two string to find if a common element is present using HashSet 
+        //Check two string to find if a common char is present using HashSet 
         public string TwoStrings()
         {
             var s1 = "hello";

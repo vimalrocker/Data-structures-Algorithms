@@ -1,10 +1,10 @@
 # Data Structures And Algorithms
 
 This Project includes 
-- Basics of data structure with examples on how to use different data structures in C# .Net Core
-- Hacker Rank solutions - 
+- Basics of data structure with examples on how to use different data structures in C#   .Net Core
+- Hacker Rank solutions  
 
-## Data structure in C#
+## Types of Data structure 
 
 - Array
 - ArrayList
