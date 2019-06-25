@@ -6,7 +6,37 @@ namespace DataStructuresAlgorithms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Call();
+            Console.ReadLine();
+        }
+
+        private static void Call()
+        {
+            DataStructures();
+            //Hacker();
+        }
+
+        public static void DataStructures()
+        {
+            var sdsa = new CallDataStructures();
+            sdsa.CallArray();
+            sdsa.CallArrayList();
+            sdsa.CallList();
+            sdsa.CallHashtableExample();
+            sdsa.CallLinkedList();
+            sdsa.Callstack();
+        }
+
+        public static void Hacker()
+        {
+            HackerRank Hp = new HackerRank();
+            // Console.WriteLine(Hp.PairSums() ? "Yes" : "No");
+            Hp.CheckIfduplicateExsist();
+            Hp.FindDuplicates();
+            Hp.InsertNodeLinkedList();
+            Console.WriteLine(Hp.BubbleSort());
+
+
         }
     }
 }

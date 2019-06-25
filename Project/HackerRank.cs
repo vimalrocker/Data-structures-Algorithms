@@ -160,7 +160,7 @@ namespace DataStructuresAlgorithms
             return list.ToArray();
         }
 
-        public void InsertNodeAtTailLinkedList()
+        public void InsertNodeLinkedList()
         {
             var linkedlist = new LinkedList<int>();
 

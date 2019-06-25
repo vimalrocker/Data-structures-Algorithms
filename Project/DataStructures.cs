@@ -22,7 +22,7 @@ namespace DataStructuresAlgorithms
         public int[] ArrayExample()
         {
             // datatype[] arrayName = new datatype[size];
-            var intarray = new int[5] { 0, 1, 2, 3, 4 };
+            int[] intarray = new int[5] { 0, 1, 2, 3, 4 };
             return intarray;
         }
 
@@ -40,7 +40,7 @@ namespace DataStructuresAlgorithms
         }
 
         /// <summary>
-        /// 
+        /// Generic Collection
         /// </summary>
         /// <returns></returns>
         public List<string> ListExample()
@@ -65,12 +65,12 @@ namespace DataStructuresAlgorithms
         }
 
         /// <summary>
-        /// Dictionary is generic type Dictionary <Key,Value>
-        /// Dictionary class is a strong type <Key,Value>  Hence, you must specify the data types for key and value.
+        /// Dictionary is generic type Dictionary [Key,Value]
+        /// Dictionary class is a strong type [Key,Value]  Hence, you must specify the data types for key and value.
         /// There is no need of boxing/unboxing.
         /// When you try to access non existing key dictionary, it gives runtime error.
-        ///Dictionary maintains an order of the stored values.
-        ///There is no need of boxing/unboxing, so it is faster than Hashtable.
+        /// Dictionary maintains an order of the stored values.
+        /// There is no need of boxing/unboxing, so it is faster than Hashtable.
         /// </summary>
         /// <returns></returns>
         public Dictionary<int, string> DictionaryExample()
@@ -79,9 +79,9 @@ namespace DataStructuresAlgorithms
             return dictionary;
         }
         /// <summary>
-        ///Hashtable is non-generic type.
-        ///Hashtable is a weakly typed data structure, so you can add keys and values of any object type.
-        ///Values need to have boxing/unboxing.
+        /// Hashtable is non-generic type.
+        /// Hashtable is a weakly typed data structure, so you can add keys and values of any object type.
+        /// Values need to have boxing/unboxing.
         /// When you try to access non existing key Hashtable, it gives null values.
         /// Hashtable never maintains an order of the stored values.
         /// Hashtable needs boxing/unboxing, so it is slower than Dictionary.
