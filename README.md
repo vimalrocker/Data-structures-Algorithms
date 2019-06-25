@@ -19,4 +19,4 @@ This Project includes
 ## What I learned 
 
 - Data structure inbuilt operation like Sorting, Reverse, Binary search , hashing 
-- Some common sorting techniques 
+- Commonly used sorting techniques like Bubble sort, Selection sort, Merge Sort 
