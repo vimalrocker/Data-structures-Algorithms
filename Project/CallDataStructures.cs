@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DataStructuresAlgorithms.Project;
 
-namespace DataStructuresAlgorithms
+namespace DataStructuresAlgorithms.Project
 {
     public class CallDataStructures
     {

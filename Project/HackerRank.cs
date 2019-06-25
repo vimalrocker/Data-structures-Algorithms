@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DataStructuresAlgorithms
+namespace DataStructuresAlgorithms.Project
 {
     public class HackerRank
     {
@@ -97,28 +97,6 @@ namespace DataStructuresAlgorithms
             return allAvailable ? "Yes" : "No";
         }
 
-        public int BubbleSort()
-        {
-            int[] arr = { 3, 2, 1 };
-            var swapcount = 0;
-
-            for (int j = 0; j <= arr.Length - 2; j++)
-            {
-                for (int i = 0; i <= arr.Length - 2; i++)
-                {
-                    if (arr[i] > arr[i + 1])
-                    {
-                        var temp = arr[i + 1];
-                        arr[i + 1] = arr[i];
-                        arr[i] = temp;
-                        swapcount++;
-                    }
-                }
-            }
-            return swapcount;
-        }
-
-
         public bool CheckIfduplicateExsist()
         {
             string[] names = new string[] {
@@ -198,5 +176,32 @@ namespace DataStructuresAlgorithms
                 index++;
             }
         }
+
+
+        #region Sorting Techniques
+
+        public int BubbleSort()
+        {
+            int[] arr = { 3, 2, 1 };
+            var swapcount = 0;
+
+            for (int j = 0; j <= arr.Length - 2; j++)
+            {
+                for (int i = 0; i <= arr.Length - 2; i++)
+                {
+                    if (arr[i] > arr[i + 1])
+                    {
+                        var temp = arr[i + 1];
+                        arr[i + 1] = arr[i];
+                        arr[i] = temp;
+                        swapcount++;
+                    }
+                }
+            }
+            return swapcount;
+        }
+
+        #endregion  
+
     }
 }

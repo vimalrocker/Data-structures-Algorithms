@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace DataStructuresAlgorithms
+namespace DataStructuresAlgorithms.Project
 {
     /// <summary>
     /// Different DataStructures in C#  
