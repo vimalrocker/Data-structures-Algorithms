@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -166,15 +167,19 @@ namespace DataStructuresAlgorithms.Project
 
             var nodeindex = 3;
             var index = 0;
+            var iteminsidelist = 0;
             foreach (var item in linkedlist)
             {
                 if (index == nodeindex)
                 {
-                    linkedlist.Remove(item);
+                    iteminsidelist = item;
+                     break;
                 }
 
                 index++;
             }
+
+            linkedlist.Remove(iteminsidelist);
         }
 
 
@@ -199,6 +204,56 @@ namespace DataStructuresAlgorithms.Project
                 }
             }
             return swapcount;
+        }
+
+
+        public void QuickSor()
+        {
+            int[] iInput = {4, 3, 1, 4, 6, 7, 5, 4, 32, 5, 26, 187, 8};
+            QuickSortNow(iInput, 0, iInput.Length - 1);
+
+        }
+
+        public void QuickSortNow( int[] array,int start, int end)
+        {
+            if (start < end)
+            {
+                int pivot = Partition(array, start, end);
+                QuickSortNow(array, start, pivot - 1);
+                QuickSortNow(array, pivot + 1, end);
+            }
+        }
+        public static int Partition(int[] array, int start, int end)
+        {
+            int pivot = array[end];
+            int pIndex = start;
+
+            for (int i = start; i < end; i++)
+            {
+                if (array[i] <= pivot)
+                {
+                    int temp = array[i];
+                    array[i] = array[pIndex];
+                    array[pIndex] = temp;
+                    pIndex++;
+                }
+            }
+
+            int anotherTemp = array[pIndex];
+            array[pIndex] = array[end];
+            array[end] = anotherTemp;
+            return pIndex;
+        }
+   
+
+        public void HeapSort()
+        {
+
+        }
+
+        public void MergeSort()
+        {
+
         }
 
         #endregion  

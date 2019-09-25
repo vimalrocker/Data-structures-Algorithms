@@ -13,8 +13,8 @@ namespace DataStructuresAlgorithms
 
         private static void Call()
         {
-            DataStructures();
-            //Hacker();
+             DataStructures();
+             //Hacker();
         }
 
         public static void DataStructures()
@@ -25,6 +25,7 @@ namespace DataStructuresAlgorithms
             sdsa.CallList();
             sdsa.CallHashtableExample();
             sdsa.CallLinkedList();
+            sdsa.CallQueue();
             sdsa.Callstack();
         }
 
@@ -35,7 +36,8 @@ namespace DataStructuresAlgorithms
             Hp.CheckIfduplicateExsist();
             Hp.FindDuplicates();
             Hp.InsertNodeLinkedList();
-            Console.WriteLine(Hp.BubbleSort());
+            Hp.BubbleSort();
+            Hp.QuickSor();
 
 
         }

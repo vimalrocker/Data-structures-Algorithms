@@ -63,6 +63,14 @@ namespace DataStructuresAlgorithms.Project
             return tempdata;
         }
 
+
+        public void CallArrayList()
+        {
+            var arrayList = ds.ArrayListExample();
+            var count = arrayList.Count;
+            arrayList.Reverse();
+            arrayList.Remove(arrayList[0]);
+        }
         /// <summary>
         ///  Check For null
         ///  Read from a list
@@ -88,16 +96,10 @@ namespace DataStructuresAlgorithms.Project
 
             list.AddRange(list);
             var list2 = list.ConvertAll(x => "A" + x);
-
+            list2.Remove("Test3");
+            list2.RemoveAll(s => s.Equals("Test"));
             list2.Clear();
 
-
-        }
-
-        public void CallArrayList()
-        {
-            var arrayList = ds.ArrayListExample();
-            var count = arrayList.Count;
         }
 
         public void CallHashtableExample()
@@ -151,11 +153,48 @@ namespace DataStructuresAlgorithms.Project
 
         }
 
+        public void CallQueue()
+        {
+            var queue = ds.QueueExample();
+            queue.Enqueue(3);
+
+            var Peek = queue.Peek();
+
+            //Removes and returns an item from the beginning of the queue.
+            var dequeue = queue.Dequeue();
+
+            foreach (var item in queue)
+            {
+
+            }
+
+            var contains = queue.Contains(1);
+
+        }
+
 
         public void Callstack()
         {
             var stack = ds.StackExample();
-            var test = stack.Peek();
+
+            stack.Push(5);
+
+            //	Returns the top item from the stack.
+            var Peek = stack.Peek();
+
+            //Removes and returns items from the top of the stack.
+            var pop = stack.Pop();
+
+            foreach (var item in stack)
+            {
+
+            }
+
+            var contains = stack.Contains(5);
+            stack.Clear();
         }
+
+
+
     }
 }

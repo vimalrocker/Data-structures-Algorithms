@@ -80,7 +80,7 @@ namespace DataStructuresAlgorithms.Project
         }
         /// <summary>
         /// Hashtable is non-generic type.
-        /// Hashtable is a weakly typed data structure, so you can add keys and values of any object type.
+        /// Hashtable is a not strongly  typed data structure, so you can add keys and values of any object type.
         /// Values need to have boxing/unboxing.
         /// When you try to access non existing key Hashtable, it gives null values.
         /// Hashtable never maintains an order of the stored values.
@@ -105,7 +105,9 @@ namespace DataStructuresAlgorithms.Project
 
         /// <summary>
         /// Follows First-In-First-Out.
-        /// Enqueue to add Dequeue to view 
+        /// Enqueue to add Dequeue to Remove
+        /// Dequeue() removes and returns a first element from a queue
+        /// Peek Returns an first item from the queue
         /// </summary>
         /// <returns></returns>
         public Queue QueueExample()
@@ -120,7 +122,9 @@ namespace DataStructuresAlgorithms.Project
 
         /// <summary>
         /// Follows Last-In-First-Out.
-        /// Push to add and pop to move 
+        /// Push Inserts an item at the top of the stack.
+        /// Peek Returns the top item from the stack.
+        /// Pop	Removes and returns items from the top of the stack.
         /// </summary>
         /// <returns></returns>
         public Stack StackExample()
@@ -130,7 +134,6 @@ namespace DataStructuresAlgorithms.Project
             stack.Push("two");
             stack.Push(3);
             stack.Push("four");
-
             return stack;
         }
 
