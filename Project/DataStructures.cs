@@ -13,7 +13,7 @@ namespace DataStructuresAlgorithms.Project
     {
         /// <summary>
         /// Collections of the same data type
-        /// Fixed Size cant accept null
+        /// Fixed Size can not  accept null
         /// Access the Array elements by numeric index
         /// The default value of numeric array elements is set to zero
         /// 
@@ -30,7 +30,8 @@ namespace DataStructuresAlgorithms.Project
         /// Collections of the different data type
         /// Can store the values of different data types or same data type
         /// Dynamic Size and accepts null
-        /// 
+        /// Boxing and unboxing is required as value type and reference type both gets stored 
+        /// Non generic  
         /// </summary>
         /// <returns></returns>
         public ArrayList ArrayListExample()
@@ -41,6 +42,9 @@ namespace DataStructuresAlgorithms.Project
 
         /// <summary>
         /// Generic Collection
+        /// Accepts null
+        /// List is strongly typed
+        /// performance is better as only value type is stored 
         /// </summary>
         /// <returns></returns>
         public List<string> ListExample()
@@ -51,7 +55,8 @@ namespace DataStructuresAlgorithms.Project
 
         }
         /// <summary>
-        /// A LinkedList Node has basically three values: the Object's Value, a reference to the Next node, and a reference to the Previous Node.
+        /// A LinkedList Node has basically three values: the Object's Value, a reference to the Next node, and a reference to the
+        /// Previous Node.
         /// Adding values to the middle of the LinkedList is much faster 
         /// </summary>
         /// <returns></returns>

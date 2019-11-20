@@ -88,6 +88,7 @@ namespace DataStructuresAlgorithms.Project
             }
 
             list.Add("Test4");
+            list.Add(null);
             list.Reverse();
             list.Sort();
             int searresult = list.BinarySearch("Test4");
