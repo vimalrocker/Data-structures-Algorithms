@@ -13,8 +13,8 @@ namespace DataStructuresAlgorithms
 
         private static void Call()
         {
-             DataStructures();
-             //Hacker();
+             //DataStructures();
+              Hacker();
         }
 
         public static void DataStructures()
@@ -37,8 +37,8 @@ namespace DataStructuresAlgorithms
             Hp.FindDuplicates();
             Hp.InsertNodeLinkedList();
             Hp.BubbleSort();
-            Hp.QuickSor();
-
+            Hp.QuickSort();
+            Hp.FibonacciExample();
 
         }
     }

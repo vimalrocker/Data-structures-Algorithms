@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
+using System.Text;
 
 namespace DataStructuresAlgorithms.Project
 {
@@ -50,6 +52,20 @@ namespace DataStructuresAlgorithms.Project
             return "No";
         }
 
+        public string FibonacciExample()
+        {
+            int n1 = 0 ,n2 = 1 ,n3;
+            StringBuilder sb = new StringBuilder();
+            for (int i = 2; i < 20; i++)
+            {
+                n3 = n1 + n2;
+                sb.Append(n3 + " ");
+                n1 = n2;
+                n2 = n3;
+            }
+
+            return sb.ToString();
+        }
 
         public string RansomNote()
         {
@@ -207,7 +223,7 @@ namespace DataStructuresAlgorithms.Project
         }
 
 
-        public void QuickSor()
+        public void QuickSort()
         {
             int[] iInput = {4, 3, 1, 4, 6, 7, 5, 4, 32, 5, 26, 187, 8};
             QuickSortNow(iInput, 0, iInput.Length - 1);

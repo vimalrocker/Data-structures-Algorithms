@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DataStructuresAlgorithms.Project;
 
 namespace DataStructuresAlgorithms.Project
@@ -82,11 +83,15 @@ namespace DataStructuresAlgorithms.Project
             var list = ds.ListExample();
 
             var test = list[0];
-            foreach (var item in list)
+            int i=0;
+            foreach(var item in list.ToList())
             {
-
+                if(item.ToString() == "Test2")
+                {
+                    list.Remove(item);    
+                }
             }
-
+           
             list.Add("Test4");
             list.Add(null);
             list.Reverse();
