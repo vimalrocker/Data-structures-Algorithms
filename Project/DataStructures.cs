@@ -16,7 +16,6 @@ namespace DataStructuresAlgorithms.Project
         /// Fixed Size can not  accept null
         /// Access the Array elements by numeric index
         /// The default value of numeric array elements is set to zero
-        /// 
         /// </summary>
         /// <returns></returns>
         public int[] ArrayExample()
@@ -30,8 +29,7 @@ namespace DataStructuresAlgorithms.Project
         /// Collections of the different data type
         /// Can store the values of different data types or same data type
         /// Dynamic Size and accepts null
-        /// Boxing and unboxing is required as value type and reference type both gets stored 
-        /// Non generic  
+        /// Non generic -  Boxing and unboxing is required as value type and reference type both gets stored 
         /// </summary>
         /// <returns></returns>
         public ArrayList ArrayListExample()
@@ -41,15 +39,14 @@ namespace DataStructuresAlgorithms.Project
         }
 
         /// <summary>
-        /// Generic Collection
+        /// Generic Collection - strongly typed 
         /// Accepts null
-        /// List is strongly typed
         /// performance is better as only value type is stored 
         /// </summary>
         /// <returns></returns>
         public List<string> ListExample()
         {
-            var listOfString = new List<string> { "Test", "Test2", "Test3" };
+            var listOfString = new List<string> { "Test", "Test2", "Test3", null};
             return listOfString;
 
 
@@ -75,7 +72,7 @@ namespace DataStructuresAlgorithms.Project
         /// There is no need of boxing/unboxing.
         /// When you try to access non existing key dictionary, it gives runtime error.
         /// Dictionary maintains an order of the stored values.
-        /// There is no need of boxing/unboxing, so it is faster than Hashtable.
+        /// It is faster than Hashtable.
         /// </summary>
         /// <returns></returns>
         public Dictionary<int, string> DictionaryExample()

@@ -96,6 +96,7 @@ namespace DataStructuresAlgorithms.Project
             list.Add(null);
             list.Reverse();
             list.Sort();
+            // list should be sorted to do binary search
             int searresult = list.BinarySearch("Test4");
 
             var contains = list.Contains("Test3");
@@ -175,7 +176,7 @@ namespace DataStructuresAlgorithms.Project
             }
 
             var contains = queue.Contains(1);
-
+          
         }
 
 

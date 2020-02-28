@@ -7,6 +7,11 @@ using System.Text;
 
 namespace DataStructuresAlgorithms.Project
 {
+    /// <summary>
+    /// Linear time
+    /// Constant Time
+    /// quadratic time complexity 
+    /// </summary>
     public class HackerRank
     {
         //Check an array to see if there is pair that when added returns a given Sum
