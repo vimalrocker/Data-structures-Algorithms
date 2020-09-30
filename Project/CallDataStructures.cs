@@ -10,6 +10,7 @@ namespace DataStructuresAlgorithms.Project
     {
         private DataStructures ds = new DataStructures();
 
+
         /// <summary>
         ///  This method will show how to
         ///  Iterate/loop through a Array and  Accessing Array
@@ -24,7 +25,7 @@ namespace DataStructuresAlgorithms.Project
             if (intarray == null) return;
 
             intarray[0] = 5;
-
+            var test  = intarray.Max();
             Array.Reverse(intarray);
 
             Array.Sort(intarray);
@@ -81,12 +82,13 @@ namespace DataStructuresAlgorithms.Project
         public void CallList()
         {
             var list = ds.ListExample();
-
+ 
             var test = list[0];
             int i=0;
+            // how to remove an item from a list
             foreach(var item in list.ToList())
             {
-                if(item.ToString() == "Test2")
+                if(item == "Test2")
                 {
                     list.Remove(item);    
                 }
@@ -127,20 +129,29 @@ namespace DataStructuresAlgorithms.Project
 
         public void CallHashSetExample()
         {
-            var list = ds.ListExample();
+            
             var ht = ds.HashSetExample();
+            var test = ht.Count();
+            int[] arr = new int[ht.Count()];
         }
 
 
         public void CallLinkedList()
         {
             var linkedlist = ds.LinkedListExample();
+            linkedlist.AddLast(9);
+            linkedlist.AddLast(19);
+            linkedlist.AddLast(21);
+            // find middle node 
+
+            var tets = linkedlist.ElementAt(linkedlist.Count/2);
+ 
 
 
             //Remove nth node 
             var nodeindex = 3;
             var index = 0;
-            foreach (var item in linkedlist)
+            foreach (var item in linkedlist.ToList())
             {
                 if (index == nodeindex)
                 {
@@ -157,6 +168,7 @@ namespace DataStructuresAlgorithms.Project
                 reverescopyList.AddFirst(i);
             }
 
+           
 
         }
 

@@ -141,7 +141,20 @@ namespace DataStructuresAlgorithms.Project
             var duplicated = arr.GroupBy(x => x).Where(y => y.Count() > 1).Select(z => z.Key).ToArray();
             return duplicated;
         }
-
+        public string[] FindDuplicatesInString()
+        {
+            string[] names = new string[] {
+                "mahesh",
+                "vikram",
+                "mayur",
+                "suprotim",
+                "saket",
+                "manish",
+                "mahesh"
+            };
+            var duplicated = names.GroupBy(x => x).Where(y => y.Count() > 1).Select(z => z.Key).ToArray();
+            return duplicated;
+        }
 
         public int[] Leftrotation()
         {

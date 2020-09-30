@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using DataStructuresAlgorithms.Project;
 
 namespace DataStructuresAlgorithms
@@ -8,6 +9,7 @@ namespace DataStructuresAlgorithms
         public static void Main(string[] args)
         {
             Call();
+            Test();
             Console.ReadLine();
         }
 
@@ -40,6 +42,30 @@ namespace DataStructuresAlgorithms
             Hp.QuickSort();
             Hp.FibonacciExample();
 
+        }
+
+        public static void Test()
+        {
+            DateTime parsedDate;
+            string status = "Active"; // Default
+            if (DateTime.TryParse(ConvertDate("20200715", "yyyyMMdd", "MM/dd/yyyy"), out parsedDate)
+                && parsedDate <= DateTime.Now)
+            {
+
+            }
+        }
+
+        protected static string ConvertDate(String localDate, String inFormat, String outFormat)
+        {
+            var myDtfi = new DateTimeFormatInfo();
+            DateTime d;
+            myDtfi.DateSeparator = String.Empty;
+            myDtfi.FullDateTimePattern = inFormat; //"yyyyMMdd";
+
+            if (DateTime.TryParseExact(localDate, inFormat, myDtfi, DateTimeStyles.None, out d) == false)
+                return String.Empty;
+
+            return d.ToString(outFormat); //"MMM-yyyy"
         }
     }
 }
