@@ -99,7 +99,7 @@ namespace DataStructuresAlgorithms.Project
             list.Reverse();
             list.Sort();
             // list should be sorted to do binary search
-            int searresult = list.BinarySearch("Test4");
+            int searchResult = list.BinarySearch("Test4");
 
             var contains = list.Contains("Test3");
 
@@ -123,7 +123,7 @@ namespace DataStructuresAlgorithms.Project
             }
 
             ht.Remove("");
-            var tets = ht[""];
+            var test = ht[""];
 
         }
 

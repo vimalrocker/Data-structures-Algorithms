@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Globalization;
-using DataStructuresAlgorithms.Project;
 
-namespace DataStructuresAlgorithms
+namespace DataStructuresAlgorithms.Project
 {
     class MainClass
     {
@@ -21,26 +20,26 @@ namespace DataStructuresAlgorithms
 
         public static void DataStructures()
         {
-            var sdsa = new CallDataStructures();
-            sdsa.CallArray();
-            sdsa.CallArrayList();
-            sdsa.CallList();
-            sdsa.CallHashtableExample();
-            sdsa.CallLinkedList();
-            sdsa.CallQueue();
-            sdsa.Callstack();
+            var callds = new CallDataStructures();
+            callds.CallArray();
+            callds.CallArrayList();
+            callds.CallList();
+            callds.CallHashtableExample();
+            callds.CallLinkedList();
+            callds.CallQueue();
+            callds.Callstack();
         }
 
         public static void Hacker()
         {
-            HackerRank Hp = new HackerRank();
+            HackerRank hp = new HackerRank();
             // Console.WriteLine(Hp.PairSums() ? "Yes" : "No");
-            Hp.CheckIfduplicateExsist();
-            Hp.FindDuplicates();
-            Hp.InsertNodeLinkedList();
-            Hp.BubbleSort();
-            Hp.QuickSort();
-            Hp.FibonacciExample();
+            hp.CheckIfduplicateExsist();
+            hp.FindDuplicates();
+            hp.InsertNodeLinkedList();
+            hp.BubbleSort();
+            hp.QuickSort();
+            hp.FibonacciExample();
 
         }
 

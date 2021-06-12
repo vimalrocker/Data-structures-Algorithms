@@ -21,7 +21,7 @@ namespace DataStructuresAlgorithms.Project
         public int[] ArrayExample()
         {
             // datatype[] arrayName = new datatype[size];
-            int[] intarray = new int[5] { 0, 1, 2, 3, 4 };
+            int[] intarray = new int[] { 0, 1, 2, 3, 4 };
             return intarray;
         }
 

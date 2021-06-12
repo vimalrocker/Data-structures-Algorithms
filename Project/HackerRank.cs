@@ -19,7 +19,7 @@ namespace DataStructuresAlgorithms.Project
         {
             int n = 5;
             int sum = 6;
-            var arr = new int[5] { 1, 5, 7, -1, 5 };
+            int[] arr = new int[] { 1, 5, 7, -1, 5 };
             bool issumthere = false;
             for (var i = 0; i < n; i++)
             {
